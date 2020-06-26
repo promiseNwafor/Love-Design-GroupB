@@ -1,0 +1,280 @@
+#head > div > div{
+    margin-left: 0;
+}
+
+header .nav-links{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    pointer-events: none;
+}
+
+header .nav-links > div{
+    background: rgba(26, 25, 25, 0.9);
+    min-width: 300vw;
+    min-height: 300vw;
+    border-radius: 50%;
+    display: flex;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+}
+
+header .nav-links > div ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.4s ease 0.1s;
+}
+
+header .nav-links > div ul li{
+    border-bottom: 0.1px solid var(--Secondary-color);
+    width: 100%;
+    margin: 0;
+}
+
+header .nav-links > div ul li:last-child{
+    border-bottom: 0px solid rgba(26, 25, 25, 0.9);
+}
+
+header .nav-links > div ul li a{
+    padding: 2rem 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: visible;
+}
+
+header .nav-links > div ul li:hover{
+    background: rgba(51, 51, 50, 0.8);
+    border-bottom: 0.1px solid rgba(51, 51, 50, 0.8);
+}
+
+header .menu-wrap{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 5px;
+    right: 0;
+    padding: 0.5rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+header .menu-wrap .toggler{
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    z-index: 3;
+    cursor: pointer;
+}
+
+header .menu-wrap .toggler:checked + .lines > div{
+    transform: rotate(135deg);
+}
+
+header .menu-wrap .toggler:checked:hover + .lines > div{
+    transform: rotate(225deg);
+}
+
+header .menu-wrap .toggler:checked:hover + .lines .last-line{
+    transform: scale(0);
+}
+
+header .menu-wrap .toggler:checked + .lines .first-line::before,
+header .menu-wrap .toggler:checked + .lines .first-line::after{
+    top: 0;
+    transform: rotate(90deg);
+}
+
+header .menu-wrap .toggler:checked + .lines .last-line{
+    transform: scale(0);
+}
+
+header .menu-wrap .toggler:checked ~ .nav-links{
+    visibility: visible;
+}
+
+header .menu-wrap .toggler:checked ~ .nav-links > div{
+    transform: scale(1);
+}
+
+header .menu-wrap .toggler:checked ~ .nav-links > div ul{
+    opacity: 1;
+}
+
+header .menu-wrap > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+header .menu-wrap .first-line{
+    width: 100%;
+    height: 10%;
+    background: var(--Primary-color);
+    position: relative;
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+
+header .menu-wrap .last-line{
+    position: absolute;
+    top: 42px;
+    left: 8px;
+    width: 40%;
+    height: 8%;
+    background: var(--Primary-color);
+    transition: all 0.5s ease;
+}
+
+header .menu-wrap .first-line::before,
+header .menu-wrap .first-line::after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--Primary-color);
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+
+header .menu-wrap .first-line::after{
+    top: 10px;
+}
+
+header input, header .first-line, header .last-line{
+    display: block;
+}
+
+#section1 .box2 h1{
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+}
+
+#section1 .section1{
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    padding: 3rem 0;
+}
+
+#section1 .box1{
+    height: 90%;
+}
+
+#section1 .box2{
+    grid-column: 2;
+    padding: 0;
+    padding-right: 3rem;
+}
+
+#alphabets p{
+    font-size: 2rem;
+    line-height: 50px;
+}
+
+#section3 .fa-chevron-left{
+    left: 1%;
+}
+
+#section4 .section4{
+    width: 100%;
+}
+
+#section4 .section4 > div .p{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+#section4 .section4 .btn{
+    width: 150px;
+}
+
+#section2 .section2{
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#section3 .section3.active{
+    right: 10%;
+}
+
+@media screen and (max-width: 480px){
+    header{
+        height: 80vh;
+    }
+    #head > div h1,
+    #section1 .box2 h1{
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+        margin-bottom: 1.5rem;
+    }
+    #section1 .section1{
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 3rem 0;
+    }
+    #section1 .box1{
+        width: 300px;
+        height: 200px;
+    }
+    #section1 .box2{
+        grid-column: 1;
+        padding: 2rem;
+        text-align: center;
+    }
+    #section1 .box2 hr{
+        margin: 0 auto 2rem auto;
+    }
+    #alphabets{
+        height: 100px;
+        margin-top: 2rem;
+    }
+
+    #alphabets p{
+        font-size: 1.5rem;
+        line-height: 40px;
+        letter-spacing: 2px;
+    }
+    #section3 .section3{
+        width: 90%;
+    }
+    #section3 .section3 .box2 p{
+        text-align: center;
+        padding: 1rem;
+    }
+    #section3 .fa-chevron-right{
+        left: 80%;
+    }
+    #section4 .section4{
+        flex-direction: column;
+        text-align: center;
+    }
+    #section4 .section4 > div{
+        width: 100%;
+    }
+    #section2 .section2 div{
+        padding: 1rem;
+    }
+    #section3 .section3.active{
+        right: 5%;
+    }
+    
+}
