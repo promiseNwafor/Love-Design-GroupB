@@ -30,7 +30,8 @@ li {
     margin: auto 1.2rem; 
 }
 
-p{
+p, h1, h2{
+    margin-bottom: 1rem;
     line-height: 30px;
 }
 
@@ -42,6 +43,12 @@ img{
 i{
     margin-left: 2rem;
     cursor: pointer;
+}
+
+hr{
+    border: 1px solid var(--Secondary-color);
+    width: 50%;
+    margin-bottom: 2rem;
 }
 
 span.logo{
@@ -57,12 +64,26 @@ span.logo{
     transition: all 0.5s ease-in-out;
 }
 
+.btn-white{
+    background: var(--Primary-color);
+    color: var(--Secondary-color);
+    font-size: 1.2rem;
+    border: 1px solid var(--Secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 0.1rem 5px rgba(68, 67, 63, 0.7);
+}
+
 .btn:hover, .fa:hover{
     opacity: 0.9;
 }
 
 .current{
     color: var(--Secondary-color);
+    font-size: 1.2rem;
+}
+
+.bold{
+    font-weight: bold;
 }
 
 header{
@@ -184,59 +205,92 @@ header input, header .first-line, header .last-line{
     margin-bottom: 2rem;
 }
 
-#section1 .box2 hr{
-    border: 1px solid var(--Secondary-color);
-    width: 50%;
-    margin-bottom: 2rem;
-}
-
 #section1 .box2 span{
     font-size: 1.5rem;
     letter-spacing: 2px;
     margin: 0;
 }
 
-#section2{
+#sectionB{
+    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 2rem auto;
-    margin-bottom: 1rem;
 }
 
-#section2 h2{
-    font-size: 2rem;
+#sectionB .sectionB{
+    width: 73%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 2rem;
+}
+
+#sectionB .text{
+    width: 60%;
+    padding: 1rem;
+}
+
+#sectionB hr{
+    margin: 1rem 0;
+    margin-top: 1.5rem;
+}
+
+#sectionB .bold{
+    margin: 0;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+#sectionB .graphics{
+    width: 40%;
+    height: 300px;
+    padding: 2rem;
+}
+
+#section2{
+    background: var(--Secondary-color);
+    color: var(--Primary-color);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section2 .wrap{
+    width: 73%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 2rem;
+}
+
+#section2 p{
+    width: 23%;
+    letter-spacing: 3px;
 }
 
 #section2 .section2{
     width: 70%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
-    margin: 3rem auto;
-    margin-bottom: 1rem;
 }
 
 #section2 .section2 div{
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
-    border: 1px solid rgba(136, 134, 134, 0.1);
-    transition: all 0.4s ease-in-out;
-}
-
-#section2 .section2 div:hover{
-    box-shadow: 0.1rem 0.1rem 5px rgba(238, 185, 10, 0.3),
-    -1px -1px 5px rgba(238, 185, 10, 0.7);
+    padding: 1rem;
 }
 
 #section2 .section2 img{
-    width: 100%;
+    width: 100px;
+    margin: auto;
 }
 
 #alphabets{
@@ -332,7 +386,7 @@ header input, header .first-line, header .last-line{
     background: var(--overlay-color);
     color: var(--Primary-color);
     position: relative;
-    height: 200px;
+    height: 250px;
     padding: 3rem;
 }
 

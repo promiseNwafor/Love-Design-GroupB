@@ -185,6 +185,29 @@ header input, header .first-line, header .last-line{
     padding-right: 3rem;
 }
 
+#sectionB .sectionB{
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 0rem;
+}
+
+#section2 .wrap{
+    width: 100%;
+}
+
+#section2 p{
+    width: 40%;
+    letter-spacing: 1px;
+}
+
+#section2 .section2{
+    width: 60%;
+}
+
+#section2 .section2 img{
+    width: 70px;
+}
+
 #alphabets p{
     font-size: 2rem;
     line-height: 50px;
@@ -205,11 +228,6 @@ header input, header .first-line, header .last-line{
 
 #section4 .section4 .btn{
     width: 150px;
-}
-
-#section2 .section2{
-    width: 90%;
-    grid-template-columns: repeat(3, 1fr);
 }
 
 #section3 .section3.active{
@@ -242,6 +260,29 @@ header input, header .first-line, header .last-line{
     }
     #section1 .box2 hr{
         margin: 0 auto 2rem auto;
+    }
+    #sectionB .sectionB, #section2 .wrap{
+        display: block;
+        text-align: center;
+        padding: 0 1rem;
+    }
+    #sectionB .sectionB h2{
+        font-size: 1.15rem;
+    }
+    #sectionB .text, #sectionB .text{
+        width: 100%;
+        padding: 1rem;
+    }
+    #sectionB .text hr, #sectionB img{
+        margin: auto;
+    }
+    #section2 .section2, #section2 p{
+        width: 100%;
+        margin: auto;
+        padding: 0 2rem;
+    }
+    #section2 p{
+        width: 70%;
     }
     #alphabets{
         height: 100px;
