@@ -3,7 +3,7 @@
     --Secondary-color: rgb(247, 12, 90);
     --text-primary: rgb(14, 12, 20);
     --overlay-color: rgba(14, 12, 20, 0.7);
-    --transparent-color: rgba(94, 93, 97, 0.7);
+    --transparent-color: rgba(55, 55, 56, 0.7);
 }
 
 * {
@@ -95,7 +95,7 @@ span.logo{
 }
 
 header{
-    background: var(--overlay-color);
+    /* background: var(--overlay-color); */
     color: var(--Primary-color);
     width: 100%;
     height: 100vh;
@@ -103,7 +103,7 @@ header{
 }
 
 header:before{
-    background: url(../assets/image-header.jpg) no-repeat center center/cover;
+    background: url(../assets/Homepage\ gif.gif) no-repeat center center/cover;
     content: '';
     position: absolute;
     top: 0;
@@ -116,7 +116,7 @@ header:before{
 
 header nav{
     width: 100%;
-    background: var(--overlay-color);
+    background: var(--transparent-color);
     position: fixed;
     top: 0;
     padding: 1.2rem 2rem;

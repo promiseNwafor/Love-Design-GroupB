@@ -245,7 +245,7 @@ footer .footer nav .site{
 }
 
 footer .footer nav .second{
-    margin-top: 3rem;
+    margin-top: 3.5rem;
 }
 
 footer .footer nav .social i{
@@ -402,6 +402,9 @@ footer .attribute{
         text-align: left;
         justify-content: space-around;
         width: 100%;
+    }
+    footer .footer nav .site .bold{
+        margin-left: 7rem;
     }
     footer .attribute{
         margin: auto;
