@@ -170,9 +170,13 @@ li{
 }
 
 @media all and (max-width: 768px){
+    .header{
+        height: 100vh;
+        background-size: 133%;
+    }
     .serv{
-        padding-bottom: 5%;
-        padding-top: 15%;
+        padding-bottom: 0%;
+        padding-top: 60%;
     }
     .services-wrapper{
         display: flex;
@@ -190,6 +194,14 @@ li{
 }
 
 @media all and (max-width: 560px){
+    .header{
+        background-size: 200%;
+    }
+
+    .serv{
+        padding-bottom: 0%;
+        padding-top: 90%;
+    }
     .serv h1{
         font-size: 35px;
     }
@@ -208,9 +220,12 @@ li{
 }
 
 @media all and (max-width: 429px){
+    .header{
+        background-size: 250%;
+    }
     .serv{
-        padding-bottom: 5%;
-        padding-top: 10%;
+        padding-bottom: 0%;
+        padding-top: 110%;
     }
     .serv h1{
         font-size: 30px;
