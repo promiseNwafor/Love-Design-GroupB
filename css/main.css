@@ -3,7 +3,7 @@
     --Secondary-color: rgb(247, 12, 90);
     --text-primary: rgb(14, 12, 20);
     --overlay-color: rgba(14, 12, 20, 0.7);
-    --transparent-color: rgba(94, 93, 97, 0.7);
+    --transparent-color: rgba(55, 55, 56, 0.7);
 }
 
 * {
@@ -73,6 +73,14 @@ span.logo{
     box-shadow: 0 0.1rem 5px rgba(68, 67, 63, 0.7);
 }
 
+.btn-default{
+    background: var(--Primary-color);
+    color: var(--Secondary-color);
+    font-size: 1.2rem;
+    border-radius: 5px;
+    box-shadow: 0 0.1rem 5px rgba(68, 67, 63, 0.7);
+}
+
 .btn:hover, .fa:hover{
     opacity: 0.9;
 }
@@ -87,7 +95,7 @@ span.logo{
 }
 
 header{
-    background: var(--overlay-color);
+    /* background: var(--overlay-color); */
     color: var(--Primary-color);
     width: 100%;
     height: 100vh;
@@ -95,7 +103,7 @@ header{
 }
 
 header:before{
-    background: url(../assets/image-header.jpg) no-repeat center center/cover;
+    background: url(../assets/Homepage\ gif.gif) no-repeat center center/cover;
     content: '';
     position: absolute;
     top: 0;
@@ -108,20 +116,33 @@ header:before{
 
 header nav{
     width: 100%;
-    background: var(--overlay-color);
+    background: var(--transparent-color);
     position: fixed;
     top: 0;
-    padding: 2rem 3rem;
+    padding: 1.2rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 2;
 }
 
+header nav .logo img{
+    width: 200px;
+    height: auto;
+}
+
 header .nav-links ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+header .nav-links ul li{
+    transition: all 0.4s ease;
+}
+
+header .nav-links ul li:hover{
+    opacity: 0.7;
 }
 
 header input, header .first-line, header .last-line{
@@ -245,8 +266,30 @@ header input, header .first-line, header .last-line{
 
 #sectionB .graphics{
     width: 40%;
-    height: 300px;
-    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: auto;
+}
+
+#sectionB .first{
+    width: 60%;
+}
+
+#sectionB .second{
+    width: 40%;
+    margin: 2rem auto;
+}
+
+#sectionB .first img{
+    width: 250px;
+    height: 250px;
+}
+
+#sectionB .second img{
+    width: 130px;
+    margin: 1.5rem auto;
 }
 
 #section2{
@@ -293,57 +336,111 @@ header input, header .first-line, header .last-line{
     margin: auto;
 }
 
-#alphabets{
+#sectionC{
     width: 100%;
-    height: 200px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4rem;
+    height: 500px;
 }
 
-#alphabets p{
-    margin: auto;
-    font-weight: bold;
-    font-size: 2.3rem;
-    text-transform: uppercase;
-    line-height: 70px;
-    letter-spacing: 10px;
+#sectionC .sectionC{
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
 }
 
-#section3{
-    background: rgb(61, 58, 58);
+#sectionC .sectionC .image{
+    width: 70%;
+}
+
+#sectionC .sectionC img{
+    width: 100%;
+    height: 500px;
+}
+
+#sectionC .sectionC .text{
+    width: 15%;
+}
+
+#sectionC .sectionC .text h6{
+    width: 70px;
+    border-bottom: 1px solid var(--Secondary-color);
+}
+
+#sectionC .sectionC .text p{
+    line-height: 50px;
+    margin-top: 2rem;
+}
+
+#sectionC .sectionC small{
+    color: #999;
+    font-size: 10px;
+    margin-right: 0.2rem;
+}
+
+#sectionD{
+    background: var(--Secondary-color);
     color: var(--Primary-color);
     width: 100%;
-    height: 550px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#sectionD img{
+    width: 350px;
+    height: 450px;
+    position: absolute;
+    top: 80px;
+    left: 200px;
+}
+
+#sectionD .sectionD{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    margin-left: auto;
+    padding: 2rem;
+    padding-top: 4rem;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+#section3{
+    width: 100%;
+    height: 350px;
     position: relative;
 }
 
 #section3 .fa{
     position: absolute;
     top: 50%;
-    left: 5%;
+    right: 12%;
+    border: 1px solid #999;
+    border-radius: 50%;
+    padding: 0.3rem 0.5rem;
 }
 
-#section3 .fa-chevron-right{
-    left: 85%;
+#section3 .fa-chevron-left{
+    right: 20%;
 }
 
 #section3 .slider{
-    width: 100%;
+    width: 48%;
     height: 100%;
     position: relative;
-    overflow: hidden;
+    margin-left: auto;
 }
 
 #section3 .section3{
     width: 80%;
     height: 100%;
-    max-width: 650px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin: auto;
     padding: 2rem;
@@ -351,6 +448,7 @@ header input, header .first-line, header .last-line{
     top: 0;
     right: -1500px;
     transition: all 1s ease;
+    padding-right: 4rem;
 }
 
 
@@ -362,24 +460,30 @@ header input, header .first-line, header .last-line{
 @media screen and (max-width: 1100px){
     #section3 .section3.active{
         right: 15%;
-    }    
+    }   
+    #sectionD img{
+    left: 100px;
+    width: 300px;
+} 
 }
 
 #section3 .section3 .box1{
-    width: 100px;
-    height: 100px;
-    margin-bottom: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 #section3 .section3 .box1 img{
-    width: 100%;
-    height: 100%;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
+    margin-right: 2rem;
 }
 
 #section3 .section3 .box2 .p{
     text-align: center;
-    margin: 4rem auto 1rem auto;
+    margin: auto;
 }
 
 #section4{
