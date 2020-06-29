@@ -207,7 +207,7 @@ footer{
 }
 
 footer .logo{
-    margin-left: 9rem;
+    margin-left: 8rem;
     margin-bottom: 2rem;
 }
 
@@ -400,11 +400,8 @@ footer .attribute{
     }
     footer .footer nav .site{
         text-align: left;
-        justify-content: center;
+        justify-content: space-around;
         width: 100%;
-    }
-    footer .footer nav .site .bold{
-        margin-left: 7rem;
     }
     footer .attribute{
         margin: auto;
