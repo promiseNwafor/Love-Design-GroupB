@@ -73,6 +73,14 @@ span.logo{
     box-shadow: 0 0.1rem 5px rgba(68, 67, 63, 0.7);
 }
 
+.btn-default{
+    background: var(--Primary-color);
+    color: var(--Secondary-color);
+    font-size: 1.2rem;
+    border-radius: 5px;
+    box-shadow: 0 0.1rem 5px rgba(68, 67, 63, 0.7);
+}
+
 .btn:hover, .fa:hover{
     opacity: 0.9;
 }
@@ -111,17 +119,31 @@ header nav{
     background: var(--overlay-color);
     position: fixed;
     top: 0;
-    padding: 2rem 3rem;
+    padding: 1.5rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 2;
 }
 
+header nav .logo img{
+    width: 200px;
+    height: auto;
+}
+
 header .nav-links ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+header .nav-links ul li{
+    transition: all 0.4s ease;
+}
+
+header .nav-links ul li:hover{
+    transform: scale(1.1);
+    opacity: 0.7;
 }
 
 header input, header .first-line, header .last-line{
@@ -245,14 +267,30 @@ header input, header .first-line, header .last-line{
 
 #sectionB .graphics{
     width: 40%;
-    height: 300px;
-    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     margin: auto;
 }
 
-#sectionB img{
-    width: 200px;
-    margin: auto;
+#sectionB .first{
+    width: 60%;
+}
+
+#sectionB .second{
+    width: 40%;
+    margin: 2rem auto;
+}
+
+#sectionB .first img{
+    width: 300px;
+    height: 300px;
+}
+
+#sectionB .second img{
+    width: 150px;
+    margin: 1.5rem auto;
 }
 
 #section2{
@@ -310,7 +348,7 @@ header input, header .first-line, header .last-line{
 #sectionC .sectionC{
     width: 90%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 2rem;
 }
@@ -321,7 +359,7 @@ header input, header .first-line, header .last-line{
 
 #sectionC .sectionC img{
     width: 100%;
-    height: 300px;
+    height: 500px;
 }
 
 #sectionC .sectionC .text{

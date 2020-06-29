@@ -1,5 +1,5 @@
 #head > div > div{
-    margin-left: 0;
+    /* margin-left: 0; */
 }
 
 header .nav-links{
@@ -56,6 +56,8 @@ header .nav-links > div ul li a{
 }
 
 header .nav-links > div ul li:hover{
+    transform: scale(1);
+    opacity: 1;
     background: rgba(51, 51, 50, 0.8);
     border-bottom: 0.1px solid rgba(51, 51, 50, 0.8);
 }
@@ -63,9 +65,9 @@ header .nav-links > div ul li:hover{
 header .menu-wrap{
     width: 50px;
     height: 50px;
-    position: fixed;
+    position: absolute;
     top: 5px;
-    right: 0;
+    right: 10px;
     padding: 0.5rem;
     cursor: pointer;
     z-index: 1;
@@ -191,6 +193,10 @@ header input, header .first-line, header .last-line{
     padding: 1rem;
 }
 
+#sectionB .graphics img{
+    width: 100px;
+}
+
 #section2 .wrap{
     width: 100%;
 }
@@ -254,7 +260,10 @@ header input, header .first-line, header .last-line{
 
 @media screen and (max-width: 480px){
     header{
-        height: 500px;
+        height: 650px;
+    }
+    header nav .logo img{
+        width: 100px;
     }
     #head > div h1,
     #section1 .box2 h1{
@@ -266,6 +275,7 @@ header input, header .first-line, header .last-line{
         grid-template-columns: 1fr;
         width: 100%;
         padding: 3rem 0;
+        padding-bottom: 0;
     }
     #section1 .box1{
         width: 300px;
@@ -285,10 +295,14 @@ header input, header .first-line, header .last-line{
         text-align: center;
         padding: 0 1rem;
     }
+    #sectionB .sectionB {
+        display: flex;
+        flex-direction: column-reverse;
+    }
     #sectionB .sectionB h2{
         font-size: 1rem;
     }
-    #sectionB .text, #sectionB .text{
+    #sectionB .text, #sectionB .text, #sectionB .graphics{
         width: 100%;
         padding: 0.5rem;
     }
