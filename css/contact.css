@@ -141,14 +141,14 @@ li{
 }
 
 .btn-call button{
-    padding: 2% 5%;
-    color: #FFF;
-    background-color: var(--Secondary-color);
     font-size: 25px;
+    padding: 1rem 2rem;
     border: none;
-    border-radius: 5px;
+    outline: none;
     transition: 1s;
+    margin-bottom: 0;
 }
+
 
 .btn:hover{
     box-shadow: 0px 10px 15px rgba(2, 2, 2, .2);
@@ -269,7 +269,7 @@ footer .footer nav .social .fa-linkedin-square{
 }
 
 footer .attribute{
-    width: 230px;
+    width: 200px;
     margin-left: auto;
 }
 

@@ -64,6 +64,12 @@ span.logo{
     transition: all 0.5s ease-in-out;
 }
 
+.btn-primary{
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
 .btn-white{
     background: var(--Primary-color);
     color: var(--Secondary-color);
@@ -313,6 +319,12 @@ header input, header .first-line, header .last-line{
 #section2 p{
     width: 23%;
     letter-spacing: 3px;
+}
+
+#section2 p .big{
+    display: inline-block;
+    font-size: 1.85rem;
+    padding-bottom: 1.5rem;
 }
 
 #section2 .section2{
