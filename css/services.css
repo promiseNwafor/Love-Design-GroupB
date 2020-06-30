@@ -26,7 +26,8 @@ li{
     margin: auto auto;
     background-image:url(../assets/image-services.jpg) ;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-position: center;
+    background-size: 100em;
 }
 
 .header-open-menu{
@@ -160,20 +161,53 @@ li{
     height: 100%;
 } 
 
+#start-pro{
+    width: 100%;
+    height: 250px;
+    margin: auto auto;
+    background-image:url(../assets/image-foot.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100em;
+}
+
+#start-pro .flex{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-top: 5%;
+    color: #FFF;
+}
+
+#start-pro .flex .p{
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.btn-contact{
+    width: 40%;
+    max-width: 200px;
+    text-align: center;
+    background-color: crimson;
+    padding: 2% 4%;
+    cursor: pointer;
+}
+
 @media all and (max-width: 1143px){
     .header{
-        height: 100%;
+        height: 100vh;
     }
     .serv{
-        padding-bottom: 10%;
+        padding-top: 50%;
     }
 }
 
 @media all and (max-width: 768px){
-    .header{
-        height: 100vh;
-        background-size: 133%;
-    }
+    
     .serv{
         padding-bottom: 0%;
         padding-top: 60%;
@@ -191,13 +225,16 @@ li{
     .brands li{
         padding-left: 0%;
     }
+
+    #start-pro .flex{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        
+    }
 }
 
 @media all and (max-width: 560px){
-    .header{
-        background-size: 200%;
-    }
-
     .serv{
         padding-bottom: 0%;
         padding-top: 90%;
@@ -220,9 +257,6 @@ li{
 }
 
 @media all and (max-width: 429px){
-    .header{
-        background-size: 250%;
-    }
     .serv{
         padding-bottom: 0%;
         padding-top: 110%;
