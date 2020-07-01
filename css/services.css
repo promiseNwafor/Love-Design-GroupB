@@ -253,6 +253,9 @@ li{
     .open,.close{
         width: 35px;
     }
+    .btn-contact{
+    width: 50%;
+    }
     
 }
 

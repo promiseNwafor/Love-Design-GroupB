@@ -213,6 +213,10 @@ header input, header .first-line, header .last-line{
     width: 70px;
 }
 
+#sectionC .sectionC .text p.p{
+    font-size: 0.8rem;
+}
+
 #sectionD img{
     width: 200px;
     height: 250px;
@@ -286,6 +290,9 @@ header input, header .first-line, header .last-line{
 	width: 150px;
 	height: 150px;
 }
+#about3 .wrap{
+    width: 78%;
+}
 #about4 .about4{
 	width: 90%;
 }
@@ -354,7 +361,7 @@ header input, header .first-line, header .last-line{
         padding-bottom: 1rem;
     }
     #sectionC .sectionC img{
-        height: 250px;
+        height: 150px;
     }
     #sectionC .sectionC h6{
         width: 100%;
@@ -378,6 +385,9 @@ header input, header .first-line, header .last-line{
         height: 100%;
         padding: 1rem;
         text-align: center;
+    }
+    #sectionC .sectionC .text hr{
+        margin: 0.5rem auto;
     }
     #section3 .slider{
         width: 100%;
@@ -456,6 +466,14 @@ header input, header .first-line, header .last-line{
     #about3 .about3 div{
         width: 100px;
         height: 100px;
+        font-size: 0.7rem;
+    }
+    #about3 .about3.aboutC{
+        padding: 2rem;
+    }
+    #about3 .wrap{
+        width: 100%;
+        text-align: center;
         font-size: 0.7rem;
     }
     #about4{
