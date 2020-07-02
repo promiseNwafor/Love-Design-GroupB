@@ -159,6 +159,42 @@ li{
     border-radius: 5px;
 }
 
+#start-pro{
+    width: 100%;
+    height: 250px;
+    margin: auto auto;
+    background-image:url(../assets/image-foot.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100em;
+}
+
+#start-pro .flex{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-top: 5%;
+    color: #FFF;
+}
+
+#start-pro .flex .p{
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.btn-contact{
+    width: 40%;
+    max-width: 200px;
+    text-align: center;
+    background-color: crimson;
+    padding: 2% 4%;
+    cursor: pointer;
+}
+
 @media all and (max-width: 1143px){
     .services-wrapper{
         grid-template-columns: 1fr 1fr;
@@ -167,9 +203,14 @@ li{
         padding-bottom: 0%;
         padding-top: 40%;
     }
+
+    .header{
+        height: 100vh;
+    }
 }
 
 @media all and (max-width: 768px){
+
     .header{
         height: 100vh;
     }
@@ -187,10 +228,16 @@ li{
         justify-content: center;
         align-items: center;
     }
-}
+
+
+    #start-pro .flex{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        
+    }
 
 @media all and (max-width: 560px){
-
     .serv{
         padding-top: 85%;
     }
@@ -208,11 +255,13 @@ li{
     .open,.close{
         width: 35px;
     }
+    .btn-contact{
+    width: 50%;
+    }
     
 }
 
 @media all and (max-width: 429px){
-    
     .serv{
         padding-top: 110%;
     }
