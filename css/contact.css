@@ -28,8 +28,8 @@ li{
     margin: auto auto;
     background-image:url(../assets/image-contact.jpg);
     background-repeat: no-repeat;
-    background-size: 100em;
     background-position: center;
+    background-size: 100em;
 }
 
 
@@ -275,6 +275,11 @@ footer .attribute{
 
 
 
+@media all and (max-width: 950px){
+    .contact{
+        padding-top: 60%;
+    }
+}
  
 
 @media all and (max-width: 768px){
@@ -313,6 +318,9 @@ footer .attribute{
 }
 
 @media all and (max-width: 560px){
+    .contact{
+        padding-top: 100%;
+    }
     .contact h1{
         font-size: 35px;
     }
@@ -354,7 +362,6 @@ footer .attribute{
 
 @media all and (max-width: 400px){
     .contact{
-    
         padding-top: 120%;
     }
     .contact h1{
