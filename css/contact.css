@@ -28,7 +28,8 @@ li{
     margin: auto auto;
     background-image:url(../assets/image-contact.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-position: center;
+    background-size: 100em;
 }
 
 
@@ -275,22 +276,12 @@ footer .attribute{
 
 
 @media all and (max-width: 950px){
-    .reach-us{
-        margin-top: 0%;
-        
+    .contact{
+        padding-top: 60%;
     }
 }
 
 @media all and (max-width: 768px){
-    
-    .header-contact{
-        height: 400px;
-        padding: 4rem 2rem;
-    }
-
-    .contact{
-        padding-bottom: 8%;
-    }
 
     .reach-us{
         margin: 8% auto;
@@ -317,6 +308,9 @@ footer .attribute{
 }
 
 @media all and (max-width: 560px){
+    .contact{
+        padding-top: 100%;
+    }
     .contact h1{
         font-size: 35px;
     }
@@ -358,8 +352,7 @@ footer .attribute{
 
 @media all and (max-width: 400px){
     .contact{
-        padding-bottom: 5%;
-        padding-top: 10%;
+        padding-top: 120%;
     }
     .contact h1{
         font-size: 30px;
