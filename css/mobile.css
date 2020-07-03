@@ -349,6 +349,9 @@ header input, header .first-line, header .last-line{
     #sectionB .sectionB h2{
         font-size: 1rem;
     }
+    #sectionB .sectionB .graphics{
+       display: none;
+    }
     #sectionB .text, #sectionB .text, #sectionB .graphics{
         width: 100%;
         padding: 0.5rem;
