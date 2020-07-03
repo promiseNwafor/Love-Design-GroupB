@@ -7,6 +7,7 @@
 }
 body{
 	font-family: Montserrat, Arial, Helvetica, sans-serif;
+        max-width: 100vw;
 }
 header{
     background: var(--overlay-color);

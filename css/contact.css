@@ -8,6 +8,7 @@ body{
     font-size: 1rem;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     font-weight: normal;
+    max-width: 100vw;
 }
 
 .container{
@@ -283,7 +284,9 @@ footer .attribute{
  
 
 @media all and (max-width: 768px){
-    
+    body{
+        max-width: 100vw;
+    }
     .header-contact{
         height: 100vh;
     }
@@ -318,6 +321,9 @@ footer .attribute{
 }
 
 @media all and (max-width: 560px){
+    body{
+        max-width: 100vw;
+    }
     .contact{
         padding-top: 100%;
     }
@@ -361,6 +367,9 @@ footer .attribute{
 }
 
 @media all and (max-width: 400px){
+    body{
+        max-width: 100vw;
+    }
     .contact{
         padding-top: 120%;
     }

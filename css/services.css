@@ -115,6 +115,11 @@ li{
     grid-gap: 2%;
 }
 
+.services-wrapper img{
+    width: 30%;
+    margin: auto;
+}
+
  h2{
     font-size: 34px;
     font-weight: 700;
@@ -210,7 +215,9 @@ li{
 }
 
 @media all and (max-width: 768px){
-
+    body{
+        max-width: 100vw;
+    }
     .header{
         height: 100vh;
     }
@@ -221,6 +228,10 @@ li{
     .services-wrapper{
         display: flex;
         flex-direction: column;
+    }
+    .services-wrapper img{
+        width: 20%;
+        margin: auto;
     }
     .flex{
         text-align: center;
@@ -238,6 +249,9 @@ li{
     }
 
 @media all and (max-width: 560px){
+    body{
+        max-width: 100vw;
+    }
     .serv{
         padding-top: 85%;
     }
