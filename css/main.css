@@ -134,8 +134,8 @@ header nav{
 }
 
 header nav .logo img{
-    width: 200px;
-    height: auto;
+    width: 100px;
+    height: 30px;
 }
 
 header .nav-links ul{
@@ -563,4 +563,8 @@ header input, header .first-line, header .last-line{
     width: 40%;
     max-width: 200px;
     text-align: center;
+}
+footer .logo  img{
+    width: 5rem;
+    height: 5rem;
 }
